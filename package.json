@@ -1,0 +1,32 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "this is for cypress practice",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "merge": "npm run",
+    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
+    "final_report": "npm run merge && npm run generate_mochawesome_report",
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashboardTest": "npm run test -- --record --key b183994b-c119-4816-bec7-558e10136ed1"
+      },
+  "author": "Sudheer",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cypress": "^5.0.0",
+    "cypress-wait-until": "^1.7.1",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "node-xlsx": "^0.15.0",
+    "projectId": "mdwdy9",
+    "wait-until": "0.0.2"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
